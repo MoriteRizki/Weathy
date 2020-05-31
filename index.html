@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weathy</title>
+    <script
+      src="https://kit.fontawesome.com/6f352b38ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-section">
+        <div class="navbar">Weathy</div>
+        <div class="weather-desc-container">
+          <div class="weather-description">
+            <div class="weather-desc-top">
+              <div class="temperature-degree">19°</div>
+              <div class="location-and-date">
+                <div class="location-and-date-container">
+                  <h1 class="currentCity">Casablanca</h1>
+                  <h2 class="currentDate">Monday, 15 May 2020</h2>
+                </div>
+              </div>
+              <div class="icon">
+                <canvas id="icon2" width="118" height="118"></canvas>
+              </div>
+            </div>
+
+            <div class="weather-desc-bottom">
+              <div class="weather-desc-list-container">
+                <ul class="desc-list">
+                  <li class="description">
+                    Description :
+                    <span class="description-data light">Clear sky</span>
+                  </li>
+                  <li class="min-temp">
+                    Minimum temperature :
+                    <span class="min-temp-data light">14°</span>
+                  </li>
+                  <li class="max-temp">
+                    Maximum temperature :
+                    <span class="max-temp-data light">19°</span>
+                  </li>
+                  <li class="wind-speed">
+                    Wind speed :
+                    <span class="wind-speed-data light">19°</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="week-weather">
+          <div class="week-days-container">
+            <div class="week-days">
+              <ul class="week-list">
+                <li class="Mon">
+                  <div class="week-day-weather">
+                    <div class="day day1 light">Mon</div>
+                    <div class="Mon-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Tue">
+                  <div class="week-day-weather">
+                    <div class="day day2 light">Tue</div>
+                    <div class="Tue-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Wed">
+                  <div class="week-day-weather">
+                    <div class="day day3 light">Wed</div>
+                    <div class="Wed-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Thy">
+                  <div class="week-day-weather">
+                    <div class="day day4 light">Thy</div>
+                    <div class="Thy-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Fri">
+                  <div class="week-day-weather">
+                    <div class="day day5 light">Fri</div>
+                    <div class="Fri-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Sab">
+                  <div class="week-day-weather">
+                    <div class="day day6 light">Sab</div>
+                    <div class="Sab-day-temp">19°</div>
+                  </div>
+                </li>
+                <li class="Sun">
+                  <div class="week-day-weather">
+                    <div class="day day7 light">Sun</div>
+                    <div class="Sun-day-temp">19°</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="hor-line">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-section">
+        <div class="search-top">
+          <div class="search-container">
+            <div class="input-container">
+              <input
+                class="location-input"
+                id="autocomplete-input"
+                placeholder="Another location"
+                type="text"
+              />
+            </div>
+            <div class="button-container">
+              <div class="search">
+                <img src="./photos/search.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="error-desc">
+            <h3 class="error-h3"></h3>
+          </div>
+        </div>
+        <div class="search-bottom">
+          <div class="hor-line-search">
+            <div class="line-search"></div>
+          </div>
+          <div class="popular-location-title-container">
+            <h2>Popular locations</h2>
+          </div>
+          <div class="popular-locations">
+            <ul class="popular-locations-list">
+              <li>
+                <p class="popular-city">London</p>
+                <p class="london-temp mr">16°</p>
+              </li>
+              <li>
+                <p class="popular-city">Washington</p>
+                <p class="washington-temp mr">20°</p>
+              </li>
+              <li>
+                <p class="popular-city">Tokyo</p>
+                <p class="tokyo-temp mr">11°</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dark-mode-container">
+            <div class="dark-mode-btn">
+              <p>Dark mode is on</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

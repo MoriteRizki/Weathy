@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.weather-section {
+  height: 100vh;
+  width: 60%;
+  background-color: #122140;
+}
+
+.search-section {
+  height: 100vh;
+  width: 40%;
+  background-color: #1c2b59;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  font-weight: bold;
+}
+
+.weather-desc-container {
+  width: 100%;
+  height: 54%;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 10%;
+}
+
+.weather-description {
+  height: 99%;
+  width: 90%;
+  background-color: #a9c6d9;
+}
+
+.weather-desc-top {
+  height: 45%;
+  width: 100%;
+  color: #122140;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+}
+
+.temperature-degree {
+  font-size: 120px;
+  margin-left: 20%;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.location-and-date-container {
+  padding-top: 70px;
+}
+
+.location-and-date-container h2 {
+  font-weight: lighter;
+}
+
+.icon {
+  padding-top: 30px;
+}
+
+.weather-desc-bottom {
+  height: 55%;
+  width: 100%;
+}
+
+.weather-desc-list-container {
+  width: fit-content;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.location-and-date {
+  margin-left: 10%;
+}
+
+.desc-list {
+  list-style: none;
+  font-size: 20px;
+}
+
+.desc-list li {
+  margin-bottom: 10px;
+  color: #122140;
+  font-weight: bold;
+}
+
+.light {
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+.week-weather {
+  width: 100%;
+  height: 150px;
+  padding-left: 10%;
+  margin-top: 50px;
+}
+
+.week-days-container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+}
+.week-days {
+  height: 100%;
+  width: 70%;
+}
+
+.week-list {
+  list-style: none;
+  display: flex;
+}
+
+.week-list li {
+  height: 100px;
+  width: 14%;
+  margin: 10px;
+}
+
+.week-day-weather {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  margin-bottom: 20px;
+}
+
+.hor-line {
+  display: flex;
+  width: 100%;
+}
+
+.line {
+  border-style: solid;
+  border-width: 1px;
+  height: 1px;
+  width: 100%;
+  margin-top: 59px;
+  margin-left: 20px;
+}
+
+.search-top {
+  height: 45%;
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+}
+
+.input-container {
+  width: 70%;
+}
+
+.location-input {
+  width: 80%;
+  height: 30px;
+  margin-left: 20%;
+  margin-top: 68px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 15px;
+  font-weight: lighter;
+}
+
+.button-container {
+  width: 30%;
+}
+
+.search {
+  height: 100px;
+  width: 100px;
+  background-color: #a9c6d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  float: right;
+  transition: 0.5s;
+}
+
+.search:hover {
+  background-color: #77a0bb;
+}
+
+.error-desc {
+  margin-left: 13.75%;
+  margin-top: 88px;
+  width: 56%;
+  font-weight: 300 !important;
+}
+
+.error-h3 {
+  font-weight: 300 !important;
+}
+
+.search-bottom {
+  height: 55%;
+  width: 100%;
+}
+
+.hor-line-search {
+  display: flex;
+  width: 55.9%;
+  margin-left: 14%;
+}
+
+.line-search {
+  border-style: solid;
+  border-width: 1px;
+  height: 1px;
+  width: 100%;
+}
+
+.popular-location-title-container {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 25%;
+}
+.popular-location-title-container h2 {
+  font-size: 20px;
+}
+
+.popular-locations-list {
+  list-style: none;
+  font-size: 20px;
+  width: 80%;
+  height: 200px;
+  margin-top: 40px;
+  padding-left: 25%;
+}
+
+.popular-locations-list li {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.popular-city {
+  width: 60%;
+}
+
+.mr {
+  margin-left: 40px;
+  width: 30%;
+}
+
+.dark-mode-container {
+  width: 100%;
+  height: 100px;
+}
+
+.dark-mode-btn {
+  width: 261px;
+  height: 50px;
+  background-color: #122140;
+  margin-left: 26%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dark-mode-btn:hover {
+  background-color: #283653;
+}
+
+.dark-mode-btn:hover {
+  background-color: #283653;
+}
+
+/*   ------------ Media Queries -------------   */
+
+@media screen and (max-width: 1064px) {
+  .container {
+    display: block;
+  }
+
+  .weather-section {
+    width: 100%;
+  }
+
+  .search-section {
+    height: auto;
+    width: 100%;
+    background-color: #1c2b59;
+    padding: 60px 0px;
+  }
+
+  .location-input {
+    margin-left: unset;
+  }
+
+  .search-container,
+  .popular-location-title-container {
+    padding: 0px 20%;
+  }
+  .hor-line-search {
+    padding: 0px 20%;
+    width: 100%;
+    margin-left: unset;
+    margin-bottom: 70px;
+  }
+
+  .search-top {
+    height: 300px !important;
+  }
+
+  .popular-locations-list {
+    width: unset;
+    padding-left: unset;
+    padding: 0px 20%;
+  }
+
+  .mr {
+    width: unset;
+    margin-left: 42%;
+  }
+
+  .dark-mode-btn {
+    margin-left: unset;
+  }
+
+  .dark-mode-container {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .weather-desc-top {
+    display: block;
+    text-align: center;
+  }
+
+  .weather-section {
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+  .weather-desc-container {
+    height: auto;
+  }
+
+  .temperature-degree {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .location-and-date {
+    margin-left: unset !important;
+  }
+
+  .hor-line {
+    display: none;
+  }
+
+  .search-container,
+  .hor-line-search,
+  .popular-locations-list,
+  .popular-location-title-container {
+    padding: 0px 15%;
+  }
+}
