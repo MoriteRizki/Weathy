@@ -6,10 +6,11 @@ window.addEventListener("load", () => {
 // retrieving the city name from the input when the user click on search
 document.querySelector(".search").addEventListener("click", () => {
   let city = document.querySelector(".location-input").value;
+  let errorDesc = document.querySelector(".error-h3");
   if (city) {
-    let errorDesc = document.querySelector(".error-h3");
     errorDesc.textContent = "";
     getWeatherByCity(city);
+    window.scrollTo(0, 0);
   } else {
     let errorDesc = document.querySelector(".error-h3");
     errorDesc.textContent = "please enter a city name !";
@@ -33,7 +34,6 @@ function getWeatherData() {
       getNext7DaysWeather(long, lat);
 
       let api = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e5b0ddaf87fa6e6e48823ce737defbc8`;
-      console.log(long, lat);
       fetch(api)
         .then((response) => {
           return response.json();
